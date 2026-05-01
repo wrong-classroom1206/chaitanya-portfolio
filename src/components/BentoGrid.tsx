@@ -21,33 +21,33 @@ export const BentoGrid = ({ skills }: BentoGridProps) => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[200px]">
-        {/* Frontend - Large Span */}
-        <BentoCard 
-          title="Frontend" 
+        {/* Frontend - Medium Span */}
+        <BentoCard
+          title="Frontend"
           icon={<Code2 className="w-5 h-5" />}
           items={skills.frontend}
-          className="md:col-span-2 md:row-span-2"
+          className="md:col-span-2 md:row-span-1"
         />
 
         {/* Backend - Medium Span */}
-        <BentoCard 
-          title="Backend & DB" 
+        <BentoCard
+          title="Backend & DB"
           icon={<Database className="w-5 h-5" />}
           items={skills.backend}
-          className="md:col-span-1 md:row-span-2"
+          className="md:col-span-1 md:row-span-1"
         />
 
-        {/* Mobile & Others */}
-        <BentoCard 
-          title="Mobile" 
+        {/* Skills*/}
+        <BentoCard
+          title="Skills"
           icon={<Smartphone className="w-5 h-5" />}
-          items={["Jetpack Compose"]}
+          items={["UI/UX Design", "Integrating APIs"]}
           className="md:col-span-1 md:row-span-1"
         />
 
         {/* Fundamentals */}
-        <BentoCard 
-          title="Fundamentals" 
+        <BentoCard
+          title="Fundamentals"
           icon={<Zap className="w-5 h-5" />}
           items={skills.fundamentals}
           className="md:col-span-1 md:row-span-1"
@@ -60,11 +60,11 @@ export const BentoGrid = ({ skills }: BentoGridProps) => {
         )}>
           <div>
             <h3 className="text-lg font-medium mb-2 opacity-50 uppercase tracking-widest text-[10px]">Learning Now</h3>
-            <p className="text-xl font-semibold">WebAssembly & Rust</p>
+            <p className="text-xl font-semibold">DSA and Figma</p>
           </div>
           <div className="mt-4 flex gap-2 overflow-hidden">
             <div className="h-1 flex-1 bg-accent/20 rounded-full overflow-hidden">
-              <motion.div 
+              <motion.div
                 className="h-full bg-accent"
                 initial={{ width: 0 }}
                 whileInView={{ width: "65%" }}
@@ -95,11 +95,11 @@ const BentoCard = ({ title, icon, items, className }: { title: string; icon: Rea
         </div>
         <h3 className="font-semibold text-lg">{title}</h3>
       </div>
-      
+
       <div className="flex flex-wrap gap-2 mt-auto">
         {items.map((skill) => (
-          <span 
-            key={skill} 
+          <span
+            key={skill}
             className="px-3 py-1 rounded-lg bg-zinc-900 border border-border text-xs font-medium text-zinc-300"
           >
             {skill}

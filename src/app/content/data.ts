@@ -15,7 +15,7 @@ export const projects = [
 ];
 
 export const skills = {
-    frontend: ["React", "Next.js", "Tailwind CSS", "TypeScript", "Figma"],
+    frontend: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
     backend: ["PHP", "MySQL", "Supabase"],
-    fundamentals: ["Operating Systems", "Data Structures", "UI/UX Design"]
+    fundamentals: ["C++", "UI/UX Design"]
 };

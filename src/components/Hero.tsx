@@ -36,7 +36,7 @@ export const Hero = () => {
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20">
       {/* Interactive Background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div 
+        <div
           className="absolute inset-0 opacity-[0.15]"
           style={{
             backgroundImage: `radial-gradient(circle at 2px 2px, #262626 1px, transparent 0)`,
@@ -54,18 +54,6 @@ export const Hero = () => {
       </div>
 
       <div className="container relative z-10 px-4 flex flex-col items-center text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-surface text-xs font-medium tracking-wider uppercase mb-8"
-        >
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
-          </span>
-          Available for new projects
-        </motion.div>
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-8 max-w-4xl">
           Building{" "}
@@ -88,9 +76,8 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-12 leading-relaxed"
-        >
-          Senior Front-End Engineer focused on crafting high-performance web experiences with precision and minimalist aesthetics.
+          className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-12 leading-relaxed">
+          Focused on crafting high-performance web experiences with precision.
         </motion.p>
 
         <motion.div
